@@ -41,7 +41,12 @@ html[xmlns] .slides {display: block;}
 /* FlexSlider Default Theme
 *********************************/
 .flexslider {overflow:hidden; position: relative; z-index:2;}
-.flexslider.top_slider {min-height:564px;}
+.flexslider.top_slider {
+	min-height:664px;
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}
 .flexslider.top_slider:before {
 	content:'';
 	position:absolute;
@@ -292,7 +297,7 @@ html[xmlns] .slides {display: block;}
 }
 .top_slider .col-lg-6 .contents .head-title {margin-bottom:15px; display:inline-block; line-height:50px;  display: flex; text-align: center; justify-content: center;}
 .top_slider .col-lg-6 .contents .head-title b {color:#1C0A94; padding-bottom: 4%;}
-.top_slider .col-lg-6 .contents .tagp {font-size:25px; color:#000000; text-align: justify;line-height:30px;font-weight: 500;}
+.top_slider .col-lg-6 .contents .tagp {font-size:35px; color:white; text-align: justify;line-height:40px;font-weight: 500;}
 .top_slider .slide1 .flex_caption1 .title3 {margin-bottom:15px; display:inline-block; font-weight:100; line-height:80px; font-size:80px;color:black}
 .top_slider .slide1 .flex_caption1 .title4 {margin-bottom:15px; display:inline-block; width:880px; font-weight:300; line-height:34px; font-size:26px;color:black}
 
