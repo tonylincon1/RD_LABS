@@ -1248,9 +1248,52 @@ div.panel.show {
 	width: 100%;
   }
 
+  #chamada {
+	padding-bottom: 5%;
+  }
+
   .col-lg-6x {
 	display: flex;
 	width: 100%;
+  }
+
+  #chamada p {
+	padding-top: 5%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 5%;
+	font-size: 30px;
+	line-height: 40px;
+	text-align: center;
+	color: #347571;
+  }
+
+  .chamada_blocos {
+	display: flex;
+	text-align: center;
+	align-items: center;
+  }
+
+  .chamada_bloco {
+	padding: 2%;
+	width: 35%;
+	height: 300px;
+	display: inline-flex;
+	text-align: center;
+	align-items: center;
+  }
+
+  #chamada .chamada_bloco .chamada_texto_menor {
+	font-size: 15px;
+  }
+
+  #chamada ul li {
+	padding-top: 5%;
+	font-size: 25px;
+  }
+
+  #chamada ul li img {
+	width: 15%;
   }
 
   .col-lg-6y {
@@ -1297,16 +1340,31 @@ div.panel.show {
   }
 
   .edital_ul_texto{
-	padding-bottom: 5%;
-	text-align: left;
-	padding-left: 28%;
+	padding: 0% 10%;
+	text-align: center;
+  }
+
+  .title_block2 {
+	padding-top: 5%;
   }
 
   .edital_ul_texto p{
 	display: flex;
 	align-items: center;
 	padding-left: 2%;
-	font-size: 20px;
+	font-size: 30px;
+  }
+
+  .descricao_programa {
+	width: 50%;
+  }
+
+  .descricao_programa p {
+	text-align: center;
+  }
+
+  .imagem_logo {
+	width: 50%;
   }
 
   .bloco1x {
@@ -1318,6 +1376,10 @@ div.panel.show {
   .alinhamento_imagem_quem_pode{
 	max-width: 150%;
 	margin-bottom: 20px;
+  }
+
+  .edital_ul_texto p {
+	padding: 0%;
   }
 
   .edital_ul_texto li{
