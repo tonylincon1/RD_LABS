@@ -469,7 +469,9 @@ html[xmlns] .slides {display: block;}
 	
 	.top_slider .slide1 .flex_caption1 .title4, .top_slider .slide2 .flex_caption1 .title4, .top_slider .slide3 .flex_caption1 .title4 {font-size:17px; line-height:24px; width:450px;}
 	
-	
+	.top_slider .col-lg-6 .contents .tagp {
+		font-size: 28px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -492,7 +494,6 @@ html[xmlns] .slides {display: block;}
 	
 	.top_slider .slide_btn {padding:15px 20px 15px 5px; width:auto; left:auto; right:15px; margin:0;}
 	.top_slider .slide_btn:before {right:5px; font-size:18px; top:-7px;}
-	
 	
 }
 

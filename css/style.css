@@ -2571,10 +2571,6 @@ input[type="color"]:focus {
 		justify-content: center;
 	}
 
-	.pull-left a .logo {
-		padding: 18px 0px;
-	}
-
 	.pull-left {
 		width: 40%;
 	}
@@ -2618,7 +2614,7 @@ input[type="color"]:focus {
 	.parallax, .cleancode_block, #team {background-attachment:scroll !important; background-size:100% auto !important; -webkit-background-size:100% auto !important;}
 	
 	
-	h2 {font-size:55px; line-height:35px;}
+	h2 {font-size:40px; line-height:35px;}
 
 /* __________ Menu __________ */
 	.navmenu ul li a {padding-left:15px; padding-right:15px;}
@@ -2689,6 +2685,12 @@ input[type="color"]:focus {
 		padding: 15px;
 	}
 
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	.motivos_ul_texto li p {
 		padding-top: 0%;
 		line-height: 20px;
@@ -2735,7 +2737,7 @@ input[type="color"]:focus {
 		font-size: 16px;
 	}
 
-	.pull-left {width: 100%;}
+	.pull-left {width: 32%;}
 
 	.pull-left a .logo {
 		max-width: 30%;
@@ -2764,7 +2766,10 @@ input[type="color"]:focus {
 	.nav-tabs li.active a i {background-position:0 0; transform:translateY(-10px); -o-transform:translateY(-10px); -ms-transform:translateY(-10px); -webkit-transform:translateY(-10px);}
 	
 	
-	.purpose_block {padding-top:35px;}
+	.purpose_block {
+		padding-top:35px;
+		padding: 2% 5% 5%;
+	}
 	.purpose_block .ipad_img1 {margin-top:-50px;}
 	.purpose_block p {font-size:20px; line-height:20px;}
 	
@@ -3092,6 +3097,19 @@ input[type="color"]:focus {
 }
 
 @media (max-width: 479px) {
+	
+	.flexslider.top_slider {
+		display: block;
+		padding-top: 25%;
+	}
+
+	.motivos_ul {
+		padding-left: 0%;
+	}
+
+	#motivos {
+		display: block;
+	}
 
 	#search-form {display:none;}
 
@@ -3113,7 +3131,7 @@ input[type="color"]:focus {
 	  }
 	
 	  .top_slider .col-lg-6 .contents .head-title {font-size:35px}
-	  .top_slider .col-lg-6 .contents .tagp {font-size: 16px;}
+	  .top_slider .col-lg-6 .contents .tagp {font-size: 18px;}
 	  h2 {font-size: 40px}
 	  h2 b {font-size: 40px;}
 	  .purpose_block p {font-size: 16px;}
@@ -3194,8 +3212,19 @@ input[type="color"]:focus {
 
 	.motivos_ul {
 		width: 100%;
-		padding-left:10%;
 		padding-bottom: 0%;
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	}
+
+	.mb-2 {
+		width: 100%;
+	}
+
+	.text-white-50.small {
+		display: block
 	}
 
 	.col {
@@ -3291,10 +3320,6 @@ input[type="color"]:focus {
 
 	.cleancode_block {
 		padding: 60px 0 20px;
-	}
-
-	.intro-img {
-		display: none;
 	}
 
 	#aprender .purpose_block .row4 p {
