@@ -3107,6 +3107,18 @@ input[type="color"]:focus {
 		padding-left: 0%;
 	}
 
+	.chamada_blocos{
+		display: block;
+	}
+
+	.chamada_bloco{
+		width: 100%;
+	}
+
+	#edital, #publico_alvo {
+		background-image: none;
+	}
+
 	#motivos {
 		display: block;
 	}
@@ -3129,10 +3141,14 @@ input[type="color"]:focus {
 		font-size: 30px;
 		margin: 0;
 	  }
+
+	.purpose_block .btn-active{
+		width: 50%;
+	}
 	
 	  .top_slider .col-lg-6 .contents .head-title {font-size:35px}
 	  .top_slider .col-lg-6 .contents .tagp {font-size: 18px;}
-	  h2 {font-size: 40px}
+	  h2 {font-size: 35px}
 	  h2 b {font-size: 40px;}
 	  .purpose_block p {font-size: 16px;}
 	  .cleancode_block p.title1 b {font-size: 50px;}
@@ -3151,9 +3167,13 @@ input[type="color"]:focus {
 		padding-left: 5%;
 	}
 
+	.bloco2{
+		padding-left: 0%;
+	}
+
 	.edital_ul_texto {
 		padding-bottom: 5%;
-		padding-left: 20%;
+		padding-left: 0%;
 		padding-right: 3%;
 	}
 
@@ -3335,8 +3355,17 @@ input[type="color"]:focus {
 	}
 
 	.pull-left a .logo {
-		max-width: 60%;
+		max-width: 50%;
 	}
+
+	.descricao_programa{
+		width: 100%;
+	}
+
+	.imagem_logo{
+		width: 100%;
+	}
+
 	.pull-right {
 		display: none;
 	}
