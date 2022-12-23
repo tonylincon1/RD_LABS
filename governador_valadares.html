@@ -40,6 +40,8 @@
 	<script src="js/animate.js" type="text/javascript"></script>
 	<script src="js/jquery.BlackAndWhite.js"></script>
 	<script src="js/myscript.js" type="text/javascript"></script>
+	<script src="js/validatform.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 	<script>
 		
 		//PrettyPhoto
@@ -272,13 +274,15 @@
 						</div>
 						<div class="mb-2">
 							<p>FALE CONOSCO</p>
-							<input id="email_footer" name="email_footer" type="text" placeholder="E-mail">
-							<span class='msg-erro msg-email'></span>
-							<input onkeypress="$(this).mask('(00) 0 0000-0000');" id="telefone_footer" name="telefone_footer" type="text" placeholder="Telefone (Whatsapp)">
-							<span class='msg-erro msg-telefone'></span>
-							<textarea id="duvida_footer" name="duvida_footer" placeholder="Dúvida"></textarea>
-							<span class='msg-erro msg-interesse'></span>
-							<input class="btn btn-active" type="submit" value="Enviar">
+							<form name="form" id="Página1">
+								<input id="email_footer" name="email_footer" type="text" placeholder="E-mail">
+								<span class='msg-erro msg-email'></span>
+								<input onkeypress="$(this).mask('(00) 0 0000-0000');" id="telefone_footer" name="telefone_footer" type="text" placeholder="Telefone (Whatsapp)">
+								<span class='msg-erro msg-telefone'></span>
+								<textarea id="duvida_footer" name="duvida_footer" placeholder="Dúvida"></textarea>
+								<span class='msg-erro msg-interesse'></span>
+								<input class="btn btn-active" type="submit" value="Enviar">
+							</form>
 						</div>
 					</div>
 				</div>
@@ -291,6 +295,6 @@
 	
 
 </div>
-
+<script src="js/validatform.js" type="text/javascript"></script>
 </body>
 </html>
