@@ -1,0 +1,11 @@
+Considerações: páginas das cidades
+
+- acredito que pode retirar as setas dos quadrados das fases, já que elas não direcionam para um lugar específico **FEITO**
+
+- na parte de público alvo e a que vem em seguida, as imagens de fundo estão atrapalhando na leitura
+
+- a parte de dúvidas, acredito que pode ficar visível apenas as perguntas e clicando abrir as respostas **FEITO**
+
+- alterar as cores dos quadros do fale conosco, está parecendo branco
+
+- acho que o mapa pode ser alterado para algo mais visual, tipo assim
