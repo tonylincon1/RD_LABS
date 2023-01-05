@@ -32,15 +32,25 @@ body {
 	z-index:5;
 }
 
-input#email_footer, input#telefone_footer, textarea#duvida_footer, .mb-2 p{
+input#email_footer, input#telefone_footer, input#duvida_footer, .mb-2 p{
 	border: None;
 	display: block;
 	font-size: 15px;
 }
 
-input#email_footer::placeholder, input#telefone_footer::placeholder, textarea#duvida_footer::placeholder, .mb-2 p{
+.mb-2 p{
 	color: #29409A;
 }
+
+input#email_footer::placeholder, input#telefone_footer::placeholder, input#duvida_footer::placeholder{
+	color: white;
+}
+
+.mb-2 .enviar_footer {
+	padding: 2% 2%;
+    border-radius: 20px;
+}
+
 .mb-2 p {
 	font-size: 20px;
 	font-weight: 800;
@@ -211,6 +221,10 @@ h6 {margin:0 0 15px; line-height:20px; font-size:12px;}
     width: 100%;
     position: relative;
     padding: 5%;
+}
+
+.bloco1_edital p {
+	padding-bottom: 2%;
 }
 
 .purpose_block .container .row .imagens h3 {
@@ -918,7 +932,7 @@ ul.ul_metodologia img {
     font-size: 30px;
     color: #29409A;
 	padding-top: 2%;
-	padding: 0% 10%;
+	padding: 0% 5%;
 	text-align: justify;
 }
 
@@ -935,7 +949,7 @@ ul.ul_metodologia img {
     text-align: justify;
 }
 
-.purpose_block .btn {margin-top:30px; margin-right:16px;}
+.purpose_block .btn {margin-top:50px; margin-right:16px;}
 .purpose_block .btn-active {
 	overflow:hidden;
 	display: inline-block;
@@ -1057,7 +1071,7 @@ button.accordion {
     background-color: #15B095;
     color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 10px;
     width: 90%;
     text-align: left;
     /* border: none; */
@@ -1345,7 +1359,7 @@ div.panel.show {
   }
 
   .title_block2 {
-	padding-top: 5%;
+	padding-top: 3%;
   }
 
   .edital_ul_texto p{
@@ -1359,8 +1373,22 @@ div.panel.show {
 	width: 50%;
   }
 
+  .descricao_programa h3 {
+	text-align: left;
+	color:#29409A;
+	font-weight: 500;
+	font-size: 25px;
+  }
+
+  .descricao_programa .p_menor{
+	color:#1FB8AC;
+	font-size: 22px;
+  }
+
   .descricao_programa p {
-	text-align: center;
+	text-align: left;
+	padding: 0% 2%;
+	color:#29409A;
   }
 
   .imagem_logo {
@@ -1379,12 +1407,17 @@ div.panel.show {
   }
 
   .edital_ul_texto p {
-	padding: 0%;
+	padding-bottom: 2%;
   }
 
   .edital_ul_texto li{
 	display: flex;
 	align-items: center;
+  }
+
+  .alinhamento_inscricao p{
+	padding-bottom: 2%;
+	color:#1FB8AC;
   }
 
   .bloco2{
@@ -1684,6 +1717,16 @@ ul.project_info li span {color:#979797;}
 	border-color:#fff;
 }
 
+#Página1 #email_footer, #Página1 #telefone_footer, #Página1 #duvida_footer {
+	background-color: #15B095;
+	border-color: #15B095;
+	border-radius: 10px;
+	margin-bottom: 0.5%;
+}
+
+#mb-2 #Página1 #telefone_footer {
+	padding-top: 5%;
+}
 
 
 
@@ -2303,7 +2346,7 @@ input[type="color"]:focus {
 }
 
 .mb-1 img {
-	margin-bottom: 2%;
+	width: 80%;
 }
 
 .mb-2 {
@@ -3130,7 +3173,8 @@ input[type="color"]:focus {
 	.navmenu ul {display: none;}
 
 	.purpose_block .panel p {
-		font-size: 20px;
+		font-size: 15px;
+		text-align: left;
 	}
 
 	.bottonmotodo {
@@ -3185,11 +3229,15 @@ input[type="color"]:focus {
 		display: none;
 	}
 
+	.descricao_programa h3{
+		text-align: center;
+	}
+
 	.purpose_block p {
 		padding-left: 2%;
 		padding-right: 2%;
 		margin-bottom: 2%;
-		align-items: center;
+		text-align: center;
 	}
 
 	.atraves_da_img_2 {
