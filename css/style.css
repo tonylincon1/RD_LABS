@@ -1728,6 +1728,12 @@ ul.project_info li span {color:#979797;}
 	padding-top: 5%;
 }
 
+#mapa {
+	height: 500px;
+	width: 100%;
+	border-radius: 5%;
+  }
+
 
 
 
@@ -2537,6 +2543,11 @@ input[type="color"]:focus {
 
 @media (max-width: 1024px) {
 
+	#mapa {
+		height: 400px;
+		margin: 5%;
+	}
+
 	.top_slider {
 		padding-left: 5%;
 		padding-right: 5%;
@@ -3140,6 +3151,12 @@ input[type="color"]:focus {
 }
 
 @media (max-width: 479px) {
+
+	#mapa {
+		height: 350px;
+		width: 80%;
+		margin: 10%;
+	}
 	
 	.flexslider.top_slider {
 		display: block;
