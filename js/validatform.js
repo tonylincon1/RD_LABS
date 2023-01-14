@@ -1,8 +1,11 @@
 var form = document.getElementById('Página1');
                 
     form.addEventListener("submit", function validaCadastro(evt) {
+        var nome = document.getElementById('nome_footer');
+        var empresa = document.getElementById('empresa_footer');
         var email = document.getElementById('email_footer');
         var telefone = document.getElementById('telefone_footer');
+        var horario = document.getElementById('horario_footer');
         var duvida = document.getElementById('duvida_footer');
         var contErro = 0;
      
@@ -32,11 +35,15 @@ var form = document.getElementById('Página1');
                 contErro += 1;
             }
             }
-    
+        
+        required('.msg-nome',nome,"Nome")
+        required('.msg-empresa',empresa,"Empresa")
         required('.msg-email',email,"E-mail")
         validemail('.msg-email',email)
         required('.msg-telefone',telefone,"Telefone")
+        required('.msg-horario',horario,"Horário")
         required('.msg-interesse',duvida,"Dúvida")
+        
     
     
         if(contErro > 0){

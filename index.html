@@ -22,7 +22,7 @@
 	<!-- FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,300&family=Poppins:wght@500;800&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
@@ -43,12 +43,22 @@
 	<script src="js/validatform.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkyALJSqmXJ4XaYNUc4INEpg4KB0arEds&callback=initMap"></script>
-	<script src="js/mapa.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 	<script>
 		
 		//PrettyPhoto
 		jQuery(document).ready(function() {
 			$("a[rel^='prettyPhoto']").prettyPhoto();
+		});
+
+		$(document).ready(function() {
+			$('.scroll').on('click', function(e) {
+				e.preventDefault();
+				var target = $(this).attr('href');
+				$('html, body').animate({
+					scrollTop: $(target).offset().top
+				}, 1000);
+			});
 		});
 		
 		//BlackAndWhite
@@ -84,6 +94,34 @@
 	<!-- PAGE -->
 	<div id="page">
 
+		<!-- HEADER -->
+		<header>
+			
+			<!-- MENU BLOCK -->
+			<div class="menu_block">
+			
+				<!-- CONTAINER -->
+				<div class="container clearfix">
+					
+					<!-- LOGO -->
+					<div class="pull-left">
+						<a href="index.html" ><img class = "logo" src="images/logo.png" alt=""></a>
+					</div><!-- //LOGO -->
+
+					<!-- MENU -->
+					<div class="pull-right">
+						<nav class="navmenu center">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="#oprograma" class="scroll">Cidades</a></li>
+								<li><a href="#irfaleconosco" class="scroll">Contato</a></li>
+							</ul>
+						</nav>
+					</div><!-- //MENU -->
+				</div><!-- //MENU BLOCK -->
+			</div><!-- //CONTAINER -->
+		</header><!-- //HEADER -->
+
 		<!-- HOME -->
 		<section id="home" class="padbot0">
 				
@@ -92,20 +130,11 @@
 				<div class="col-lg-6 col-md-12 col-xs-12">
 						<div class="contents">
 							<p class="tagp">Venha participar do primeiro Programa de Aceleração de Startups do Rio Doce</p>
-							<div class="container1">
-								<a class="btn btn-active" href="#oprograma" ><span style="color: white" data-hover="Clique aqui">Conheça as cidades</span></a>
-							</div>
 						</div>
 				</div>
 
-				<div class="col-lg-6x col-md-12 col-xs-12 p-0">
-					<div class="intro-img">
-						<div class="imagem1">
-							<div class="service-item">
-							<img src="images/Imagem1.png" alt="">
-							</div>
-						</div>
-					</div>
+				<div class="col-lg-6x col-md-12 col-xs-12 p-0 padding_right_top">
+					<img src="images/banner-home.png" alt="">
 				</div>
 				   
 			</div>
@@ -113,53 +142,97 @@
 
 		<!-- ABOUT -->
 		<section id="oprograma">
+			<div class="icon1_oprograma">
+				<a href="#cidades" class="scroll">
+					<img id="cidades" src="images/icon_1.png" alt="">
+				</a>
+			</div>
+			<div class="class_espacamento">
+				<div class="cidades">
+					<ul>
+						<li><img src="images/gvaladares.png" alt=""></li>
+						<li><h2>Governador Valadares</h2></li>
+						<li><a class="btn pages btn-active" style="color: white;" href="governador_valadares.html">Saiba mais</a></li>
+					</ul>
+				</div>
+				<div class="cidades">
+					<ul>
+						<li><img src="images/ipatinga.png" alt=""></li>
+						<li><h2>Ipatinga</h2></li>
+						<li><a class="btn pages btn-active" style="color: white;" href="index.html">Saiba mais</a></li>
+					</ul>
+				</div>
+				<div class="cidades">
+					<ul>
+						<li><img src="images/linhares.png" alt=""></li>
+						<li><h2>Linhares</h2></li>
+						<li><a class="btn pages btn-active" style="color: white;" href="index.html">Saiba mais</a></li>
+					</ul>
+				</div>
+			</div>
+		</section><!-- //ABOUT -->
+		<div class="icon1_oprograma">
+			<a href="#irfaleconosco" class="scroll">
+				<img id="irfaleconosco" src="images/icon_2.png" alt="">
+			</a>
+		</div>
 
-			<!-- MULTI PURPOSE -->
-			<div class="purpose_block">
-				
-				<!-- CONTAINER -->
-				<div class="container">
-					
-					<!-- ROW -->
-					<div id="motivos" class="row">
-							<div id="mapa"></div>
-							<div class="service-item">
-								<ul class="motivos_ul">
-									<a class="btn pages btn-active" style="color: white;" href="governador_valadares.html" ><span>Governador Valadares</span></a>
-									<a class="btn pages btn-active" style="color: white;" href="ipatinga.html" ><span>Ipatinga</span></a>
-									<a class="btn pages btn-active" style="color: white;" href="linhares.html" ><span>Linhares</span></a>
-								</ul>
-							</div>
-					</div><!-- //ROW -->
-				</div><!-- //CONTAINER -->
-			</div><!-- //MULTI PURPOSE -->
+		<!-- ABOUT -->
+		<section id="faleconosco">
+			<h1 class="faleconosco">Fale conosco</h1>
+			<div class="class_espacamento">
+				<div class="faleconoscoleft">
+					<p>Preencha o formulário ao lado. Um de nossos especialistas irá entrar em contato com você.</p>
+					<img src="images/formulario.png" alt="">
+				</div>
+				<div class="faleconoscoright">
+					<form name="form" id="Página1">
+						<p>Nome</p>
+						<input id="nome_footer" name="nome_footer" type="text">
+						<span class='msg-erro msg-nome'></span>
+						<p>Empresa</p>
+						<input id="empresa_footer" name="empresa_footer" type="text">
+						<span class='msg-erro msg-empresa'></span>
+						<p>E-mail</p>
+						<input id="email_footer" name="email_footer" type="text">
+						<span class='msg-erro msg-email'></span>
+						<p>Telefone</p>
+						<input onkeypress="$(this).mask('(00) 0 0000-0000');" id="telefone_footer" name="telefone_footer" type="text">
+						<span class='msg-erro msg-telefone'></span>
+						<p>Horário preferencial para contato?</p>
+						<input id="horario_footer" name="horario_footer" type="text">
+						<span class='msg-erro msg-horario'></span>
+						<p>Como podemos ajudar?</p>
+						<input id="duvida_footer" name="duvida_footer" type="text">
+						<span class='msg-erro msg-interesse'></span>
+						<div class="botao_envio_forms">
+							<input src="images/envio.png" type="image" alt="Enviar">
+						</div>
+					</form>
+				</div>
+			</div>
 		</section><!-- //ABOUT -->
 
 	</div><!-- //PAGE -->
 	<!-- Footer-->
 	<section id="rodape">
-		<div class="purpose_block1">
-			<div class="bg-black text-center py-5">
-				<div class="container px-5">
-					<div class="text-white-50 small">
-						<div class="mb-1">
-							<img src="images/logo_final.png" alt="">
-						</div>
-						<div class="mb-2">
-							<p>FALE CONOSCO</p>
-							<form name="form" id="Página1">
-								<input id="email_footer" name="email_footer" type="text" placeholder="E-mail">
-								<span class='msg-erro msg-email'></span>
-								<input onkeypress="$(this).mask('(00) 0 0000-0000');" id="telefone_footer" name="telefone_footer" type="text" placeholder="Telefone (Whatsapp)">
-								<span class='msg-erro msg-telefone'></span>
-								<input id="duvida_footer" name="duvida_footer" type="text" placeholder="Dúvida">
-								<span class='msg-erro msg-interesse'></span>
-								<input class="btn btn-active enviar_footer" type="submit" value="Enviar">
-							</form>
-						</div>
-					</div>
-				</div>
+		<div class="footer_1">
+			<div class="img_1_footer_1">
+				<img src="images/logo-labs-branca.png" alt="">
 			</div>
+			<div class="img_2_footer_1">
+				<ul>
+					<li><p>Realização:</p></li>
+					<li class="logo_1_footer"><img src="images/logo_renova.png" alt=""></li>
+				</ul>
+				<ul>
+					<li><p>Apoio:</p></li>
+					<li class="logo_2_footer"><img src="images/logo_branco.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer_2">
+			<p>IEBT 2023 - Alguns direitos reservados.</p>
 		</div>
 	</section><!-- //TEAM -->
 
