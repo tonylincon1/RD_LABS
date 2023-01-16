@@ -362,7 +362,6 @@ blockquote:before {content:'“'; position:absolute; left:15px; top:13px; font-s
 	padding: 24px 27px 22px;
 	border-radius: 0;
 	box-shadow: none;
-	text-transform:uppercase;
 	font-weight: 900;
 	font-size: 20px;
 	color:#999;
@@ -390,6 +389,11 @@ blockquote:before {content:'“'; position:absolute; left:15px; top:13px; font-s
 
 .btn-active:hover {color:#fff;}
 
+.row {
+	margin: 0 0 0 0;
+	display: flex;
+	align-items: center;
+}
 
 .btn-lg {padding:19px 30px; font-size:18px;}
 .btn-sm {padding: 6px 20px 5px; font-size:13px;}
@@ -1078,7 +1082,7 @@ ul.ul_metodologia img {
 .purpose_block .btn-active {
 	overflow:hidden;
 	display: inline-block;
-	width: 40%;
+	width: 30%;
 	justify-content: center;
 }
 
@@ -1087,15 +1091,20 @@ ul.ul_metodologia img {
 	width: 100%;
 }
 
+.bloco1_publico_alvo h2, #duvidas h2 {
+	font-size: 60px;
+	color: #2365AD;
+	padding-bottom: 5%;
+}
+
 .bloco1_publico_alvo p {
-	padding: 0% 10%;
+	padding: 0% 0%;
 	padding-bottom: 2%;
 }
 
 #publico_alvo {
-    background-image: url(../images/fundo4.png);
-    background-position: right bottom;
-    background-repeat: no-repeat;
+    padding-left: 80px;
+	padding-right: 80px;
 }
 
 #edital {
@@ -1196,13 +1205,13 @@ button.accordion {
     background-color: #15B095;
     color: white;
     cursor: pointer;
-    padding: 10px;
-    width: 90%;
+    padding: 30px;
+    width: 75%;
     text-align: left;
     /* border: none; */
     outline: none;
     transition: 0.4s;
-    font-size: 20px;
+    font-size: 30px;
     border-radius: 10px;
     margin-bottom: 0.5%;
     border-color: #15B095;
@@ -1234,8 +1243,11 @@ div.panel.show {
 }
 
 .purpose_block .panel p {
-	font-size: 20px;
-	text-align:justify;
+	font-size: 30px;
+	text-align:center;
+	color:black;
+	padding-left: 15%;
+    padding-right: 15%;
 }
 
 .bottonmotodo:hover {
@@ -1388,25 +1400,130 @@ div.panel.show {
 	padding-left: 0px;
   }
 
+  .pull-right-align-right, .pull-right-align-left {
+    width: 50%;
+}
+
+.pull-right-align-right li p {
+    padding-left: 5%;
+	text-align: center;
+}
+
+.pull-right-align-left li p {
+    padding-right: 5%;
+	text-align: left;
+}
+
   #chamada {
 	padding-bottom: 5%;
   }
+
+  .chamada_imagem {
+	width: 100%;
+	position: relative;
+	top: -100px;
+  }
+
+  .cidade_gv {
+    font-size: 80px;
+    font-weight: bold;
+    color: #2365AD;
+    padding-top: 3%;
+	top:3%;
+	left: 23%;
+	position: absolute;
+	z-index:1;
+}
+
+.cidade_ipatinga {
+    font-size: 80px;
+    font-weight: bold;
+    color: #2365AD;
+    padding-top: 3%;
+	top:3%;
+	left: 42%;
+	position: absolute;
+	z-index:1;
+}
 
   .col-lg-6x {
 	display: flex;
 	width: 100%;
   }
 
-  #chamada p {
-	padding-top: 5%;
-	padding-left: 10%;
-	padding-right: 10%;
+  #chamada h2 {
+	margin:0 0 0 0;
+	padding-left: 80px;
+	padding-right: 80px;
 	padding-bottom: 5%;
-	font-size: 30px;
-	line-height: 40px;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: bold;
 	text-align: center;
-	color: #347571;
+	color: #2365AD;
   }
+
+  .descricao_programa h2 {
+	padding-bottom: 5%;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: bold;
+	text-align: left;
+	color: #2365AD;
+  }
+
+  .edital_ul_texto h2 {
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: bold;
+	text-align: left;
+	color: #2365AD;
+  }
+
+  section#programa {
+	padding-left: 80px;
+	padding-right: 80px;
+  }
+
+  .aling_right_h2 {
+	justify-content: right;
+}
+
+  .reta {
+    height: 15px;
+    width: 300px;
+    background-color: #00BEAA;
+    position: relative;
+    top: -40px;
+    left: 6px;
+}
+
+.reta2 {
+    height: 15px;
+    width: 350px;
+    background-color: #00BEAA;
+    position: relative;
+    top: -10px;
+    left: 6px;
+}
+
+.reta3 {
+    height: 15px;
+    width: 420px;
+    background-color: #00BEAA;
+    position: relative;
+    top: -10px;
+    left: 220px;
+}
+
+.reta4 {
+    height: 15px;
+    width: 580px;
+    background-color: #00BEAA;
+    position: relative;
+    top: -10px;
+    left: 6px;
+}
 
   .chamada_blocos {
 	display: flex;
@@ -1414,26 +1531,31 @@ div.panel.show {
 	align-items: center;
   }
 
+  .chamada_blocos li img {
+	width: 30%;
+  }
+
   .chamada_bloco {
 	padding: 2%;
 	width: 35%;
-	height: 300px;
+	height: 450px;
 	display: inline-flex;
 	text-align: center;
 	align-items: center;
   }
 
-  #chamada .chamada_bloco .chamada_texto_menor {
-	font-size: 15px;
+  #chamada .chamada_bloco .chamada_texto_menor, #publico_alvo .chamada_bloco .chamada_texto_menor {
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 400;
   }
 
-  #chamada ul li {
+  #chamada ul li,  #publico_alvo ul li {
 	padding-top: 5%;
-	font-size: 25px;
-  }
-
-  #chamada ul li img {
-	width: 15%;
+	padding-bottom: 5%;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 100%;
   }
 
   .col-lg-6y {
@@ -1480,7 +1602,8 @@ div.panel.show {
   }
 
   .edital_ul_texto{
-	padding: 0% 10%;
+	padding-left: 80px;
+	padding-right: 80px;
 	text-align: center;
   }
 
@@ -1491,7 +1614,8 @@ div.panel.show {
   .edital_ul_texto p{
 	display: flex;
 	align-items: center;
-	padding-left: 2%;
+	padding-left: 0%;
+	padding-right: 0%;
 	font-size: 30px;
   }
 
@@ -1507,8 +1631,9 @@ div.panel.show {
   }
 
   .descricao_programa .p_menor{
-	color:#1FB8AC;
-	font-size: 22px;
+	color:black;
+	font-size: 30px;
+	font-weight: 400;
   }
 
   .descricao_programa p {
@@ -1543,7 +1668,7 @@ div.panel.show {
 
   .alinhamento_inscricao p{
 	padding-bottom: 2%;
-	color:#1FB8AC;
+	color:black;
   }
 
   .bloco2{
@@ -1873,6 +1998,7 @@ ul.project_info li span {color:#979797;}
 	border-color: white;
 	border-radius: 10px;
 	margin-bottom: 0.5%;
+	border:none;
 }
 
 #mb-2 #Página1 #telefone_footer {
@@ -2522,6 +2648,10 @@ input[type="color"]:focus {
     display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.bloco2 h2 {
+	font-size: 60px;
 }
 
 
