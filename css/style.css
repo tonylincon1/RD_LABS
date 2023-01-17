@@ -312,7 +312,6 @@ h6 {margin:0 0 15px; line-height:20px; font-size:12px;}
 .bloco1_edital {
     width: 100%;
     position: relative;
-    padding: 5%;
 }
 
 .bloco1_edital p {
@@ -1102,15 +1101,9 @@ ul.ul_metodologia img {
 	padding-bottom: 2%;
 }
 
-#publico_alvo {
+#publico_alvo, #edital {
     padding-left: 80px;
 	padding-right: 80px;
-}
-
-#edital {
-    background-image: url(../images/fundo3.png);
-    background-position: right top;
-    background-repeat: no-repeat;
 }
 
 .purpose_block .container .row .btn-active span:before {
@@ -1638,7 +1631,7 @@ div.panel.show {
 
   .descricao_programa p {
 	text-align: left;
-	padding: 0% 2%;
+	padding: 0% 0%;
 	color:#29409A;
   }
 
@@ -1708,7 +1701,8 @@ div.panel.show {
 	display: flex;
 	text-align: left;
 	justify-content: center;
-	align-items: center;
+	align-items: stretch;
+	flex-wrap: wrap;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	padding-left: 80px;
@@ -1716,13 +1710,15 @@ div.panel.show {
 }
 
 .cidades {
-	display: inline-block;
-	width: 34%;
+	display: flex;
+	align-items: stretch;
 	text-align: center;
+	width: 33%;
 }
 
 .cidades ul li {
 	display: block;
+	text-align: center;
 }
 
 .cidades img {
@@ -2826,10 +2822,60 @@ input[type="color"]:focus {
 
 @media (max-width: 1024px) {
 
-	#mapa {
-		height: 400px;
-		margin: 5%;
+	.cidade_gv, .cidade_ipatinga {
+		font-size: 60px;
+		top:2%;
 	}
+
+	#chamada h2, .descricao_programa h2 {
+		font-size: 50px;
+	}
+
+	#chamada ul li, #publico_alvo ul li {
+		font-size: 35px;
+	}
+
+	#chamada .chamada_bloco .chamada_texto_menor, #publico_alvo .chamada_bloco .chamada_texto_menor, .descricao_programa .p_menor {
+		font-size: 28px;
+	}
+
+	.descricao_programa .p_menor {
+		padding-bottom: 3%;
+	}
+
+	.bloco2 h2 {
+		font-size: 50px;
+	}
+
+	.reta2 {
+		width: 300px;
+	}
+
+	.reta3 {
+		width: 360px;
+		left: 160px;
+	}
+
+	.reta4 {
+		width: 400px;
+	}
+
+	.bloco1_publico_alvo h2, #duvidas h2 {
+		font-size: 50px;
+	}
+
+	.pull-right-align-right, .pull-right-align-left {
+		width: 60%;
+	}
+
+	#chamada ul li, #publico_alvo ul li {
+		font-size: 30px;
+	}
+
+	button.accordion {
+		line-height: 30px;
+	}
+
 	.col-lg-6 {
 		width: 100%;
 	}
@@ -2948,7 +2994,6 @@ input[type="color"]:focus {
 		 width: 100%; 
 		 position: relative;
 		margin-left: 0%;
-		padding-left: 5%;
 	}
 	
 }
@@ -3021,7 +3066,72 @@ input[type="color"]:focus {
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.logo a {font-size:22px;}
+
+	.chamada_imagem {
+		top:-50px
+	}
+
+	.cidade_gv {
+		font-size: 50px;
+		top:2%;
+		left: 20%;
+	}
+
+	.cidade_ipatinga {
+		left: 35%;
+	}
+
+	#chamada h2, .descricao_programa h2 {
+		font-size: 40px;
+	}
+
+	#motivos {
+		display: block;
+	}
+
+	.descricao_programa, .imagem_logo {
+		width: 100%;
+	}
 	
+	#chamada h2, .descricao_programa h2 {
+		text-align: center;
+	}
+
+	.reta {
+		left: 160px;
+	}
+
+	.reta2 {
+		width: 250px;
+	}
+
+	.descricao_programa .p_menor {
+		line-height: 30px;
+	}
+	
+	.pull-right-align-right li p {
+		text-align: center;
+	}
+
+	.bloco1_publico_alvo h2, #duvidas h2 {
+		font-size: 40px;
+	}
+
+	button.accordion {
+		font-size: 28px;
+	}
+
+	.purpose_block .panel p {
+		font-size: 28px;
+	}
+
+	#edital .row {
+		display: block;
+	}
+	#edital .row .pull-left, #edital .pull-right-align-right {
+		width: 100%;
+	}
+
 	.countdown{
 		padding: 15px;
 	}
@@ -3088,7 +3198,7 @@ input[type="color"]:focus {
 	
 	#search-form input:focus {width:42px;}
 
-	.pull-right {display: none;}
+	.menu_block .pull-right {display: none;}
 	
 
 /* __________ Menu __________ */
@@ -3106,11 +3216,7 @@ input[type="color"]:focus {
 	.nav-tabs li a:hover i {background-position:0 -90px; transform:translateY(-5px); -o-transform:translateY(-5px); -ms-transform:translateY(-5px); -webkit-transform:translateY(-5px);}
 	.nav-tabs li.active a i {background-position:0 0; transform:translateY(-10px); -o-transform:translateY(-10px); -ms-transform:translateY(-10px); -webkit-transform:translateY(-10px);}
 	
-	
-	.purpose_block {
-		padding-top:35px;
-		padding: 2% 5% 5%;
-	}
+
 	.purpose_block .ipad_img1 {margin-top:-50px;}
 	.purpose_block p {font-size:20px; line-height:20px;}
 	
@@ -3193,9 +3299,46 @@ input[type="color"]:focus {
 	}
 
 	.purpose_block p {
-		font-size: 18px;
-		margin-left: 5%;
-		margin-right: 5%;
+		font-size: 28px;
+		line-height: 30px;
+		text-align: left;
+	}
+
+	.bloco2 .h2_principal {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+
+	.bloco2 h2 {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.row .pull-left, .row .pull-right {
+		width: 50%;
+	}
+
+	.pull-right-align-right, .pull-right-align-left {
+		width: 50%;
+	}
+
+	.reta3 {
+		width: 290px;
+		left: 15px;
+	}
+
+	.reta4 {
+		width: 260px;
+	}
+
+	#publico_alvo .chamada_blocos {
+		display: block;
+	}
+
+	#publico_alvo .chamada_bloco {
+		width: 100%;
+		height: 250px;
+		margin-top: 2%;
 	}
 
 	.cleancode_block span {
@@ -3537,6 +3680,42 @@ input[type="color"]:focus {
 
 @media (max-width: 479px) {
 
+	.cidade_gv {
+		font-size: 35px;
+		top:1.5%;
+		left: 40px;
+	}
+
+	.cidade_ipatinga {
+		font-size: 35px;
+		top:1.3%;
+		left: 37%;
+	}
+
+	.chamada_imagem {
+		top: -10px
+	}
+
+	#chamada h2, section#programa, #quem_pode_se_inscrever {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	#chamada h2, .descricao_programa h2 {
+		font-size: 35px;
+		text-align:center;
+		line-height: 40px;
+	}
+
+	#chamada h2 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	.bloco2 h2 {
+		font-size: 30px;
+	}
+
 	#home {
 		padding-top: 5%;
 		padding-left: 50px;
@@ -3593,8 +3772,12 @@ input[type="color"]:focus {
 	.navmenu ul {display: none;}
 
 	.purpose_block .panel p {
-		font-size: 15px;
-		text-align: left;
+		font-size: 28px;
+	}
+
+	#publico_alvo .chamada_bloco {
+		height: 370px;
+		margin-bottom: 20px;
 	}
 
 	.bottonmotodo {
@@ -3639,7 +3822,7 @@ input[type="color"]:focus {
 	  .top_slider .col-lg-6 .contents .tagp {font-size: 35px; text-align: center; line-height: 40px;}
 	  h2 {font-size: 30px}
 	  h2 b {font-size: 40px;}
-	  .purpose_block p {font-size: 16px;}
+	  .purpose_block p {font-size: 28px;}
 	  .cleancode_block p.title1 b {font-size: 50px;}
 	.purpose_block .btn-active span {
 		max-width: 100%;
@@ -3679,10 +3862,50 @@ input[type="color"]:focus {
 	}
 
 	.purpose_block p {
-		padding-left: 2%;
-		padding-right: 2%;
-		margin-bottom: 2%;
+		margin-bottom: 3%;
+		line-height: 30px;
 		text-align: center;
+	}
+
+	.reta {
+		height: 10px;
+	}
+
+	.reta2, .reta3, .reta4 {
+		height: 10px;
+		top: -20px;
+		left: 60px;
+		width: 190px;
+	}
+
+	.pull-right-align-right, .pull-right-align-left {
+		width: 100%;
+	}
+
+	.row .pull-left, .row .pull-right {
+		display: none;
+	}
+
+	.aling_right_h2 {
+		justify-content: center;
+	}
+
+	.edital_ul_texto li {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.pull-right-align-left li p {
+		text-align:center;
+	}
+
+	.bloco1_publico_alvo h2, #duvidas h2 {
+		font-size: 35px;
+	}
+
+	#publico_alvo, #edital {
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 
 	.atraves_da_img_2 {
@@ -3844,7 +4067,7 @@ input[type="color"]:focus {
 	}
 
 	button.accordion {
-		font-size: 15px;
+		font-size: 28px;
 	}
 
 	.descricao_programa{
@@ -3855,7 +4078,7 @@ input[type="color"]:focus {
 		width: 100%;
 	}
 
-	.pull-right {
+	.menu_block .pull-right {
 		display: none;
 	}
 
@@ -3908,18 +4131,13 @@ input[type="color"]:focus {
 	.top_slider .col-lg-6 .contents .head-title {font-size: 30px; line-height:40px}
 	.top_slider .col-lg-6 .contents .tagp {font-size: 30px;}
 
-	.purpose_block p {font-size: 14px; margin-left: 2%; margin-right: 2%;}
-
 	.cleancode_block .nav-tabs {display: flex; justify-content: center;}
 	.cleancode_block .nav-tabs li {display: flex; justify-content: center;width:80px}
 	.cleancode_block .nav-tabs li a span {font-size: 12px;}
 
-	.purpose_block .panel p {
-		font-size: 15px;
-	}
-
-	.purpose_block p {
-		margin-bottom: 10px;
+	
+	.chamada_imagem, .cidade_gv, .cidade_ipatinga, .cidade_linhares {
+		display: none;
 	}
 
 	.bloco2 img {
@@ -3950,10 +4168,6 @@ input[type="color"]:focus {
 		font-size: 12px;
 	}
 
-	.purpose_block p {
-		font-size: 12px;
-	}
-
 	.popup {
 		margin-top: 25%;
 		margin-left: 10%;
@@ -3961,6 +4175,39 @@ input[type="color"]:focus {
 	}
 	.purpose_block .btn-active span {
 		font-size: 15px;
+	}
+
+	#chamada h2 {
+		padding-top: 5%;
+	}
+
+	#chamada .chamada_bloco .chamada_texto_menor, #publico_alvo .chamada_bloco .chamada_texto_menor, .descricao_programa .p_menor {
+		font-size: 25px;
+	}
+
+	#chamada h2, .descricao_programa h2 {
+		font-size: 30px;
+	}
+
+	.reta {
+		width: 260px;
+	}
+
+	.reta2, .reta3, .reta4 {
+		left: 40px;
+	}
+
+	.purpose_block p {
+		font-size: 25px;
+	}
+
+	.edital_ul_texto h2 {
+		text-align: center;
+		line-height: 30px;
+	}
+
+	button.accordion {
+		font-size: 25px;
 	}
 
 }
