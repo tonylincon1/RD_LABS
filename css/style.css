@@ -40,7 +40,7 @@ body {
 input#email_footer, input#telefone_footer, input#duvida_footer, .mb-2 p{
 	border: None;
 	display: block;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 .mb-2 p{
@@ -604,7 +604,17 @@ form#Página1 p {
 
 form#Página1 .botao_envio_forms {
 	display: flex;
-	justify-content: right;
+	justify-content: center;
+}
+
+form#Página1 .botao_envio_forms a {
+	width: 40%;
+	font-size: 25px;
+	color: white;
+}
+
+form#Página1 .botao_envio_forms .btn-active {
+	background-image:linear-gradient(90deg, #15B095 26%, #15B095 100%);
 }
 
 form#Página1 .botao_envio_forms input {
@@ -1198,6 +1208,7 @@ button.accordion {
     background-color: #15B095;
     color: white;
     cursor: pointer;
+	line-height: 35px;
     padding: 30px;
     width: 75%;
     text-align: left;
@@ -2320,7 +2331,7 @@ input[type="text"] {
 	font-family: 'Nunito';
 	font-weight:400;
 	line-height:20px;
-	font-size: 12px;
+	font-size: 20px;
 	color: #29409A;
 	font-style:normal;
 	border-radius: 0;	
