@@ -112,8 +112,9 @@
 					<div class="pull-right">
 						<nav class="navmenu center">
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li><a href="#scroll_o_programa" class="scroll">O projeto</a></li>
 								<li><a href="#oprograma" class="scroll">Cidades</a></li>
+								<li><a href="http://zing.iebtinnovation.com/marketplace" target="_blank">Inscrição</a></li>
 								<li><a href="#irfaleconosco" class="scroll">Contato</a></li>
 							</ul>
 						</nav>
@@ -129,7 +130,7 @@
 			<div class="flexslider top_slider">					
 				<div class="col-lg-6 col-md-12 col-xs-12">
 						<div class="contents">
-							<p class="tagp">Venha participar do primeiro Programa de Aceleração de negócios com potencial inovador e startups do Rio Doce</p>
+							<p class="tagp">Inscreva-se no principal projeto de aceleração de startups e negócios com potencial inovador do Rio Doce!</p>
 						</div>
 				</div>
 
@@ -166,7 +167,7 @@
 					<ul>
 						<li><img src="images/linhares.png" alt=""></li>
 						<li><h2>Linhares</h2></li>
-						<li><a class="btn pages btn-active" style="color: white;" href="linhares.html">Saiba mais</a></li>
+						<li id="scroll_o_programa"><a class="btn pages btn-active" style="color: white;" href="linhares.html">Saiba mais</a></li>
 					</ul>
 				</div>
 			</div>
@@ -177,64 +178,43 @@
 			</a>
 		</div>
 
-		<!-- ABOUT -->
-		<section id="faleconosco">
-			<h1 class="faleconosco">Fale conosco</h1>
-			<div class="class_espacamento">
-				<div class="faleconoscoleft">
-					<p>Preencha o formulário ao lado. Um de nossos especialistas irá entrar em contato com você.</p>
-					<img src="images/formulario.png" alt="">
-				</div>
-				<div class="faleconoscoright">
-					<form name="form" id="Página1">
-						<p>Nome</p>
-						<input id="nome_footer" name="nome_footer" type="text">
-						<span class='msg-erro msg-nome'></span>
-						<p>Empresa</p>
-						<input id="empresa_footer" name="empresa_footer" type="text">
-						<span class='msg-erro msg-empresa'></span>
-						<p>E-mail</p>
-						<input id="email_footer" name="email_footer" type="text">
-						<span class='msg-erro msg-email'></span>
-						<p>Telefone</p>
-						<input onkeypress="$(this).mask('(00) 0 0000-0000');" id="telefone_footer" name="telefone_footer" type="text">
-						<span class='msg-erro msg-telefone'></span>
-						<p>Horário preferencial para contato?</p>
-						<input id="horario_footer" name="horario_footer" type="text">
-						<span class='msg-erro msg-horario'></span>
-						<p>Como podemos ajudar?</p>
-						<input id="duvida_footer" name="duvida_footer" type="text">
-						<span class='msg-erro msg-interesse'></span>
-						<div class="botao_envio_forms">
-							<input class="btn pages btn-active" type="submit" value="Enviar">
-						</div>
-					</form>
-				</div>
+		<section id="oprojeto">
+			<div class="purpose_block">
+				<h2>O projeto</h2>
+				<div class="reta_index"></div>
+				<p>O Rio Doce LABS é um Programa de Aceleração Idealizado pela Fundação Renova e executado pelo IEBT Innovation, que visa a aceleração de negócios com potencial inovador e cujos produtos/serviços oferecidos atendam as demandas dos territórios apresentados, além de desenvolver os empreendedores, de forma gratuita.</p>
 			</div>
-		</section><!-- //ABOUT -->
+		</section>
+
+		<!-- PUBLICO ALVO -->
+		<script>
+			fetch('componentes_site/publico_alvo.html')
+			.then(response => response.text())
+			.then(data => {
+			  document.querySelector('#publico_alvo_page').innerHTML = data;
+			});
+		</script>
+		<section id="publico_alvo_page" class="padbot20"></section><!-- //PUBLICO ALVO -->
+
+		<!-- EDITAL -->
+		<script>
+			fetch('componentes_site/edital.html')
+			.then(response => response.text())
+			.then(data => {
+			  document.querySelector('#edital_page').innerHTML = data;
+			});
+		</script>
+		<section id="edital_page" class="padbot20"></section><!-- //EDITAL -->
 
 	</div><!-- //PAGE -->
-	<!-- Footer-->
-	<section id="rodape">
-		<div class="footer_1">
-			<div class="img_1_footer_1">
-				<img src="images/logo-labs-branca.png" alt="">
-			</div>
-			<div class="img_2_footer_1">
-				<ul>
-					<li><p>Realização:</p></li>
-					<li class="logo_1_footer"><a href="https://www.fundacaorenova.org/" target="_black"><img src="images/logo_renova.png" alt=""></a></li>
-				</ul>
-				<ul>
-					<li><p>Apoio:</p></li>
-					<li class="logo_2_footer"><a href="https://www.iebtinovacao.com.br/" target="_black"><img src="images/logo_branco.png" alt=""></a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer_2">
-			<p>IEBT 2023 - Alguns direitos reservados.</p>
-		</div>
-	</section><!-- //TEAM -->
+	<script>
+		fetch('componentes_site/rodape.html')
+		.then(response => response.text())
+		.then(data => {
+		  document.querySelector('#rodape_page').innerHTML = data;
+		});
+	  </script>
+	  <section id="rodape_page"></section>
 
 	<!-- Feedback Modal-->
 

@@ -296,7 +296,7 @@ html[xmlns] .slides {display: block;}
 }
 .top_slider .col-lg-6 .contents .head-title {margin-bottom:15px; display:inline-block; line-height:50px;  display: flex; text-align: center; justify-content: center;}
 .top_slider .col-lg-6 .contents .head-title b {color:#1C0A94; padding-bottom: 4%;}
-.top_slider .col-lg-6 .contents .tagp {font-size:60px; color:#2365AD; text-align: left;line-height:60px;font-weight: 600;}
+.top_slider .col-lg-6 .contents .tagp {font-size:50px; color:#2365AD; text-align: left;line-height:50px;font-weight: 600;}
 .top_slider .slide1 .flex_caption1 .title3 {margin-bottom:15px; display:inline-block; font-weight:100; line-height:80px; font-size:80px;color:black}
 .top_slider .slide1 .flex_caption1 .title4 {margin-bottom:15px; display:inline-block; width:880px; font-weight:300; line-height:34px; font-size:26px;color:black}
 

@@ -37,6 +37,33 @@ body {
 	z-index:5;
 }
 
+#oprojeto {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 80px;
+	padding-right: 80px;
+	display: flex;
+	text-align: left;
+	justify-content: left;
+	align-items: center;
+}
+
+#oprojeto h2 {
+	font-size: 50px;
+    color: #2365AD;
+	text-align: left;
+}
+
+#oprojeto p {
+	margin-top: 5%;
+}
+
+#oprojeto .purpose_block p {
+	padding: 0px;
+	color: #343434;
+	text-align: left;
+}
+
 input#email_footer, input#telefone_footer, input#duvida_footer, .mb-2 p{
 	border: None;
 	display: block;
@@ -74,7 +101,7 @@ input#email_footer::placeholder, input#telefone_footer::placeholder, input#duvid
 
 .faleconoscoleft, .faleconoscoright {
 	padding-right: 2.5%;
-	width: 50%;
+	width: 100%;
 }
 
 .faleconoscoright {
@@ -91,18 +118,18 @@ input#email_footer::placeholder, input#telefone_footer::placeholder, input#duvid
 	padding-left: 80px;
 	padding-right: 80px;
 	background-color: #2365AD;
-	height: 200px;
+	height: 400px;
 }
 
 .footer_1 .img_1_footer_1 img {
-	width: 30%;
+	width: 50%;
 	height: 40%;
 }
 
 .img_1_footer_1, .img_2_footer_1 {
 	width: 100%;
-	display: flex;
-	text-align: left;
+	display: block;
+	text-align: center;
 	color: white;
 }
 
@@ -111,7 +138,11 @@ input#email_footer::placeholder, input#telefone_footer::placeholder, input#duvid
 }
 
 .img_2_footer_1 ul {
-	width: 30%;
+	width: 80%;
+}
+
+.img_2_footer_1 ul img {
+	padding-bottom: 10%;
 }
 
 .footer_1 .logo_1_footer img, .footer_1 .logo_2_footer img {
@@ -595,6 +626,11 @@ header {
 	border-radius: 40px;
 }
 
+.faleconoscoright h3 {
+	font-size: 30px;
+	color: #00BEAA;
+}
+
 form#Página1 p {
 	padding-top: 3%;
 	font-size: 25px;
@@ -619,7 +655,7 @@ form#Página1 .botao_envio_forms .btn-active {
 
 form#Página1 .botao_envio_forms input {
 	padding: 3%;
-	width: 20%;
+	width: 40%;
 }
 
 .container {
@@ -1101,7 +1137,7 @@ ul.ul_metodologia img {
 }
 
 .bloco1_publico_alvo h2, #duvidas h2 {
-	font-size: 60px;
+	font-size: 50px;
 	color: #2365AD;
 	padding-bottom: 5%;
 }
@@ -1209,7 +1245,7 @@ button.accordion {
     color: white;
     cursor: pointer;
 	line-height: 35px;
-    padding: 30px;
+    padding: 20px;
     width: 75%;
     text-align: left;
     /* border: none; */
@@ -1248,10 +1284,34 @@ div.panel.show {
 
 .purpose_block .panel p {
 	font-size: 30px;
-	text-align:center;
-	color:black;
+	text-align:left;
+	color:#343434;
 	padding-left: 15%;
     padding-right: 15%;
+}
+
+.descricao_programa img {
+	width: 7%;
+	transform: rotate(270deg);
+}
+
+.duvidas_seta {
+	display: flex;
+	align-items: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+	justify-content: flex-end;
+}
+
+button.accordion img {
+	width: 5%;
+}
+
+.descricao_programa ul li {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 .bottonmotodo:hover {
@@ -1408,9 +1468,27 @@ div.panel.show {
     width: 50%;
 }
 
-.pull-right-align-right li p {
+#quem_pode_se_inscrever_page .pull-right-align-right {
+    display: flex;
+	flex-direction: column;
+	justify-content: right;
+	align-items: flex-end;
+}
+
+.pull-right-align-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+}
+
+#edital .pull-right-align-right li p {
     padding-left: 5%;
-	text-align: center;
+	text-align: left;
+}
+
+#quem_pode_se_inscrever_page .pull-right-align-right li p {
+    padding-left: 5%;
+	text-align: right;
 }
 
 .pull-right-align-left li p {
@@ -1451,16 +1529,18 @@ div.panel.show {
 	padding-left: 80px;
 	padding-right: 80px;
 	padding-bottom: 5%;
-	font-size: 60px;
+	font-size: 50px;
 	line-height: 60px;
 	font-weight: bold;
 	text-align: center;
 	color: #2365AD;
+	position: relative;
+	top:-60px;
   }
 
   .descricao_programa h2 {
 	padding-bottom: 5%;
-	font-size: 60px;
+	font-size: 50px;
 	line-height: 60px;
 	font-weight: bold;
 	text-align: left;
@@ -1484,13 +1564,17 @@ div.panel.show {
 	justify-content: right;
 }
 
-  .reta {
+  .reta, .reta_index {
     height: 15px;
     width: 300px;
     background-color: #00BEAA;
     position: relative;
     top: -40px;
     left: 6px;
+}
+
+.reta_index {
+	top:0px;
 }
 
 .reta2 {
@@ -1504,16 +1588,13 @@ div.panel.show {
 
 .reta3 {
     height: 15px;
-    width: 420px;
+    width: 80%;
     background-color: #00BEAA;
-    position: relative;
-    top: -10px;
-    left: 220px;
 }
 
 .reta4 {
     height: 15px;
-    width: 580px;
+    width: 500px;
     background-color: #00BEAA;
     position: relative;
     top: -10px;
@@ -1641,7 +1722,7 @@ div.panel.show {
   }
 
   .descricao_programa .p_menor{
-	color:black;
+	color:#343434;
 	font-size: 30px;
 	font-weight: 400;
   }
@@ -2017,8 +2098,8 @@ ul.project_info li span {color:#979797;}
  #nome_footer, #empresa_footer, #horario_footer, #email_footer, #telefone_footer, #duvida_footer {
 	background-color: white;
 	border-color: white;
-	border-radius: 10px;
-	margin-bottom: 0.5%;
+	border-radius: 3px;
+	margin-bottom: 3%;
 	border:none;
 }
 
@@ -2672,12 +2753,8 @@ input[type="color"]:focus {
 }
 
 .bloco2 h2 {
-	font-size: 60px;
+	font-size: 50px;
 }
-
-
-
-
 
 /*-----------------------------------------------------------------------------------*/
 /*	Portfolio Single
@@ -2852,6 +2929,14 @@ input[type="color"]:focus {
 		top:2%;
 	}
 
+	.footer_1 {
+		height: 300px;
+	}
+
+	#oprojeto h2 {
+		font-size: 40px;
+	}
+
 	#chamada h2, .descricao_programa h2 {
 		font-size: 50px;
 	}
@@ -2886,7 +2971,7 @@ input[type="color"]:focus {
 	}
 
 	.bloco1_publico_alvo h2, #duvidas h2 {
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	.pull-right-align-right, .pull-right-align-left {
@@ -2953,7 +3038,7 @@ input[type="color"]:focus {
 	}
 
 	.top_slider .col-lg-6 .contents .tagp {
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	.col-lg-6x {
@@ -3454,7 +3539,7 @@ input[type="color"]:focus {
 	}
 
 	.footer_1 .img_1_footer_1 img {
-		width: 50%;
+		width: 60%;
 	}
 
 	.footer_1 .logo_1_footer img {
@@ -3470,11 +3555,35 @@ input[type="color"]:focus {
 		padding: 5%;
 	}
 
+	.footer_1 {
+		padding-top: 5%;
+		display: block;
+		height: 750px;
+		text-align: center;
+	}
+
+	.img_1_footer_1, .img_2_footer_1 {
+		display: flex;
+		justify-content: center;
+	}
+
 }
 
 @media (max-width: 767px) {
 	.container {padding-left:31px; padding-right:15px;}
 	
+	.footer_1 {
+		padding-top: 5%;
+		display: block;
+		height: 750px;
+		text-align: center;
+	}
+
+	.img_1_footer_1, .img_2_footer_1 {
+		display: flex;
+		justify-content: center;
+	}
+
 	.col-lg-6x {
 		display: none;
 	}
@@ -3710,6 +3819,11 @@ input[type="color"]:focus {
 	.purpose_block .container1 .popup2 h2 {
 		font-size: 40px;
 	}
+
+	#oprojeto .purpose_block p {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 	
 	
 }
@@ -3722,6 +3836,32 @@ input[type="color"]:focus {
 		padding-left: 50px;
 		padding-right: 50px;
 		text-align: center;
+	}
+
+	.reta_index {
+		width: 250px;
+	}
+
+	.pull-right-align-right li p {
+		text-align: center;
+	}
+
+	.duvidas_seta {
+		display: none;
+	}
+
+	#oprojeto {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	#quem_pode_se_inscrever_page .pull-right-align-right {
+		align-items: center;
+	}
+
+	#quem_pode_se_inscrever_page .pull-right-align-right li p {
+		padding-top: 5%;
+		text-align:center;
 	}
 
 	.chamada_imagem {
@@ -3842,6 +3982,7 @@ input[type="color"]:focus {
 	}
 
 	.footer_1 {
+		height: 550px;
 		padding-left: 50px;
 		padding-right: 50px;
 	}
