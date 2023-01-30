@@ -160,49 +160,17 @@
 		<section id="edital_page" class="padbot20"></section><!-- //EDITAL -->
 
 		<!-- DUVIDAS -->
-		<section id="duvidas">
-			<div class="purpose_block">
-				<div class="bloco2">
-				<h2>Ainda tem dúvidas?</h2>
-				<button class="accordion">Quem pode participar?<div class="duvidas_seta"><img src="images/seta.png" alt=""></div></button>
-				<div class="panel">
-				<p>Negócios em fase de ideação, inicial ou em busca de aprimoramento.</p>
-				</div>
-
-				<button class="accordion">Recebo Auxílio Financeiro Mensal pela Fundação Renova, posso perdê-lo se participar do projeto?<div class="duvidas_seta"><img src="images/seta.png" alt=""></div></button>
-				<div class="panel">
-				<p>Não. Esse projeto é idealizado pela Fundação Renova, e visa promover a aceleração de negócios de impacto e desenvolver o comportamento empreendedor nas cidades de Governador Valadares e Ipatinga em Minas Gerais e Linhares no Espírito Santo.</p>
-				</div>
-
-				<button class="accordion">Até quando posso me inscrever?<div class="duvidas_seta"><img src="images/seta.png" alt=""></div></button>
-				<div class="panel">
-				<p>As inscrições estarão abertas entre os dias 18/01/2023 e 18/02/2023.</p>
-				</div>
-
-				<button class="accordion">Tenho apenas uma idea de negócio. Posso me inscrever?<div class="duvidas_seta"><img src="images/seta.png" alt=""></div></button>
-				<div class="panel">
-				<p>Sim. Esse projeto é direcionado para empreendedores que possuem uma ideia de negócio, um negócio em fase inicial ou negócios em busca de aprimoramento.</p>
-				</div>
-
-				<button class="accordion">Já participei do Projeto Impulso Rio Doce. Posso me inscrever?<div class="duvidas_seta"><img src="images/seta.png" alt=""></div></button>
-				<div class="panel">
-				<p>Sim. Desde que o seu negócio possua potencial inovador e cujos produtos/serviços oferecidos atendam as demandas dos territórios apresentados e esteja em consonância com os desafios apresentados no edital.</p>
-				</div>
-				</div>
-			</div>
-		</section><!-- //DUVIDAS -->
-
 		<script>
-			var acc = document.getElementsByClassName("accordion");
-			var i;
-	
-			for (i = 0; i < acc.length; i++) {
-				acc[i].onclick = function(){
-					this.classList.toggle("active");
-					this.nextElementSibling.classList.toggle("show");
-				}
-			}
+			fetch('componentes_site/duvidas.html')
+			.then(response => response.text())
+			.then(data => {
+			  document.querySelector('#duvidas_page').innerHTML = data;
+			  let script = document.createElement('script');
+			  script.src = 'js/duvidas.js';
+			  document.head.appendChild(script);
+			});
 		</script>
+		<section id="duvidas_page"></section><!-- //DUVIDAS -->
 
 	</div><!-- //PAGE -->
 	<!-- Footer-->
@@ -211,6 +179,9 @@
 		.then(response => response.text())
 		.then(data => {
 		  document.querySelector('#rodape_page').innerHTML = data;
+		  let script = document.createElement('script');
+		  script.src = 'js/validatform.js';
+		  document.head.appendChild(script);
 		});
 	</script>
 	<section id="rodape_page"></section><!-- //Footer -->
