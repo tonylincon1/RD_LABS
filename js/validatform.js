@@ -2,6 +2,8 @@ var form = document.getElementById('Página1');
                 
     form.addEventListener("submit", function validaCadastro(evt) {
         var nome = document.getElementById('nome_footer');
+        var telefone = document.getElementById('Telefone');
+        var email = document.getElementById('E-mail');
         var duvida = document.getElementById('duvida_footer');
         var contErro = 0;
      
@@ -33,6 +35,9 @@ var form = document.getElementById('Página1');
             }
         
         required('.msg-nome',nome,"Nome")
+        required('.msg-telefone',telefone,"Telefone")
+        required('.msg-email',email,"E-mail")
+        validemail('.msg-email',email)
         required('.msg-interesse',duvida,"Dúvida")
         
     

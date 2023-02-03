@@ -16,8 +16,12 @@
         <div class="faleconoscoright">
             <form name="form" id="Página1">
                 <h3>Contato</h3>
-                <input id="nome_footer" name="nome_footer" type="text" placeholder="Assunto">
+                <input id="nome_footer" name="nome_footer" type="text" placeholder="Nome">
                 <span class='msg-erro msg-nome'></span>
+                <input onkeypress="$(this).mask('(00) 0 0000-0000');" id="Telefone" name="Telefone" type="text" placeholder="Telefone">
+					  <span class='msg-erro msg-telefone'></span>
+                <input id="E-mail" name="E-mail" type="text" placeholder="E-mail">
+                <span class='msg-erro msg-email'></span>
                 <textarea id="duvida_footer" name="duvida_footer" type="text" placeholder="Mensagem"></textarea>
                 <span class='msg-erro msg-interesse'></span>
                 <div class="botao_envio_forms">

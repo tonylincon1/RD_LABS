@@ -118,7 +118,7 @@ input#email_footer::placeholder, input#telefone_footer::placeholder, input#duvid
 	padding-left: 80px;
 	padding-right: 80px;
 	background-color: #2365AD;
-	height: 400px;
+	height: 430px;
 }
 
 .footer_1 .img_1_footer_1 img {
@@ -621,7 +621,6 @@ header {
 
 .faleconoscoright {
 	text-align: left;
-	background-color: #2365AD;
 	color: white;
 	border-radius: 40px;
 }
@@ -2095,7 +2094,7 @@ ul.project_info li span {color:#979797;}
 	border-color:#fff;
 }
 
- #nome_footer, #empresa_footer, #horario_footer, #email_footer, #telefone_footer, #duvida_footer {
+input#Telefone, #nome_footer, input#E-mail, #telefone_footer, #duvida_footer {
 	background-color: white;
 	border-color: white;
 	border-radius: 3px;
@@ -2930,7 +2929,7 @@ input[type="color"]:focus {
 	}
 
 	.footer_1 {
-		height: 300px;
+		height: 400px;
 	}
 
 	#oprojeto h2 {
@@ -3558,7 +3557,7 @@ input[type="color"]:focus {
 	.footer_1 {
 		padding-top: 5%;
 		display: block;
-		height: 750px;
+		height: 900px;
 		text-align: center;
 	}
 
@@ -3575,7 +3574,7 @@ input[type="color"]:focus {
 	.footer_1 {
 		padding-top: 5%;
 		display: block;
-		height: 750px;
+		height: 900px;
 		text-align: center;
 	}
 
@@ -3982,7 +3981,7 @@ input[type="color"]:focus {
 	}
 
 	.footer_1 {
-		height: 550px;
+		height: 650px;
 		padding-left: 50px;
 		padding-right: 50px;
 	}
