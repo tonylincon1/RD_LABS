@@ -1102,7 +1102,7 @@ ul.ul_metodologia img {
 	margin-bottom: 0px;
     font-weight: 500;
     line-height: 40px;
-    font-size: 30px;
+    font-size: 25px;
     color: #29409A;
 	padding-top: 2%;
 	padding: 0% 5%;
@@ -1250,7 +1250,7 @@ button.accordion {
     /* border: none; */
     outline: none;
     transition: 0.4s;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 10px;
     margin-bottom: 0.5%;
     border-color: #15B095;
@@ -1282,7 +1282,7 @@ div.panel.show {
 }
 
 .purpose_block .panel p {
-	font-size: 30px;
+	font-size: 25px;
 	text-align:left;
 	color:#343434;
 	padding-left: 15%;
@@ -1617,15 +1617,18 @@ button.accordion img {
   .chamada_bloco {
 	padding: 2%;
 	width: 35%;
-	height: 480px;
+	height: 450px;
 	display: flex;
 	text-align: center;
 	align-items: flex-start;
   }
 
+  #publico_alvo .chamada_bloco {
+  height: 400px;
+  }
 
   #chamada .chamada_bloco .chamada_texto_menor, #publico_alvo .chamada_bloco .chamada_texto_menor {
-	font-size: 30px;
+	font-size: 25px;
 	line-height: 40px;
 	font-weight: 400;
   }
@@ -1643,7 +1646,7 @@ button.accordion img {
   #chamada ul li,  #publico_alvo ul li {
 	padding-top: 5%;
 	padding-bottom: 5%;
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: bold;
 	line-height: 100%;
   }
@@ -1706,7 +1709,7 @@ button.accordion img {
 	align-items: center;
 	padding-left: 0%;
 	padding-right: 0%;
-	font-size: 30px;
+	font-size: 25px;
   }
 
   .descricao_programa {
@@ -1734,6 +1737,10 @@ button.accordion img {
 
   .imagem_logo {
 	width: 50%;
+  }
+
+  .imagem_logo img, #quem_pode_se_inscrever img, #edital_page img {
+	width: 80%;
   }
 
   .bloco1x {
@@ -2945,7 +2952,7 @@ input[type="color"]:focus {
 	}
 
 	#chamada .chamada_bloco .chamada_texto_menor, #publico_alvo .chamada_bloco .chamada_texto_menor, .descricao_programa .p_menor {
-		font-size: 28px;
+		font-size: 23px;
 	}
 
 	.descricao_programa .p_menor {
@@ -2990,7 +2997,7 @@ input[type="color"]:focus {
 	}
 
 	.container {
-		max-width: 970px;
+		max-width: 999px;
 	}
 
 	img {
@@ -3182,6 +3189,7 @@ input[type="color"]:focus {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+	
 	.logo a {font-size:22px;}
 
 	.chamada_imagem {
@@ -3309,8 +3317,6 @@ input[type="color"]:focus {
 	h2 {font-size: 50px}
 	
 	#search-form input:focus {width:42px;}
-
-	.menu_block .pull-right {display: none;}
 	
 
 /* __________ Menu __________ */
