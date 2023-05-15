@@ -1604,6 +1604,11 @@ button.accordion img {
 	display: flex;
 	text-align: center;
 	align-items: center;
+	justify-content: center;
+  }
+
+  .chamada_blocos_mariana {
+	background: #99E5DD;
   }
 
   .chamada_blocos li img {
@@ -1817,7 +1822,7 @@ button.accordion img {
 	display: flex;
 	align-items: stretch;
 	text-align: center;
-	width: 33%;
+	width: 25%;
 }
 
 .cidades ul li {
